@@ -1,13 +1,14 @@
 .signup-page {
     padding: 80px 20px;
     text-align: center;
-    background-color: #f3e0e9; /* Light pink background */
+    background-color: #424242; /* Darker grey background */
+    color: #e0e0e0;
   }
   
   .signup-page h2 {
     font-size: 2em;
     margin-bottom: 20px;
-    color: #ad1457; /* Darker pink accent color */
+    color: #bb86fc; /* Accent color */
   }
   
   .signup-form {
@@ -17,9 +18,10 @@
     flex-direction: column;
     gap: 15px;
     padding: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #505050; /* Darker border */
     border-radius: 5px;
-    background-color: #fff;
+    background-color: #303030; /* Dark grey form background */
+    color: #e0e0e0;
   }
   
   .form-group {
@@ -31,20 +33,23 @@
     text-align: left;
     font-weight: bold;
     margin-bottom: 5px;
+    color: #e0e0e0;
   }
   
   .form-group input[type="text"],
   .form-group input[type="email"],
   .form-group input[type="password"] {
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid #616161; /* Darker input border */
     border-radius: 4px;
     font-size: 1em;
+    background-color: #424242; /* Dark input background */
+    color: #e0e0e0;
   }
   
   .signup-form button {
-    background-color: #d81b60; /* Pink sign-up button */
-    color: white;
+    background-color: #bb86fc; /* Accent color for button */
+    color: #212121; /* Dark text on button */
     padding: 10px 15px;
     border: none;
     border-radius: 4px;
@@ -53,20 +58,22 @@
   }
   
   .signup-form button:hover {
-    background-color: #c2185b;
+    background-color: #80cbc4; /* Hover color */
+    color: #212121;
   }
   
   .signup-form p {
     margin-top: 15px;
     font-size: 0.9em;
-    color: #555;
+    color: #e0e0e0;
   }
   
   .signup-form a {
-    color: #007bff;
+    color: #80cbc4;
     text-decoration: none;
   }
   
   .signup-form a:hover {
     text-decoration: underline;
+    color: #bb86fc;
   }

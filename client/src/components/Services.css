@@ -1,12 +1,13 @@
 .services-section {
     padding: 80px 20px;
-    background-color: #e8f5e9; /* Light green background */
+    background-color: #303030; /* Dark grey background */
+    color: #e0e0e0;
   }
   
   .services-section h2 {
     font-size: 2em;
     margin-bottom: 20px;
-    color: #388e3c; /* Green accent color */
+    color: #80cbc4; /* Teal accent color */
     text-align: center;
   }
   
@@ -21,5 +22,5 @@
   .services-section li {
     font-size: 1.1em;
     line-height: 1.8;
-    color: #333;
+    color: #e0e0e0;
   }

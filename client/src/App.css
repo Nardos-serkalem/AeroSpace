@@ -9,7 +9,6 @@ body {
 .App {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Ensure the app takes at least the full viewport height */
+  min-height: 100vh;
+  /* You might not need a background color here if it's set on the body */
 }
-
-/* You can add more global styles here */

@@ -1,13 +1,23 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: sans-serif; /* Using a more general sans-serif for better cross-browser compatibility */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #121212; /* Very dark grey background */
+  color: #e0e0e0; /* Light grey text for better contrast */
+  /* If you have a background image, you might need to adjust its styling for the dark theme */
+  /* background-image: url('./assets/images/your-dark-background-image.jpg'); */
+  /* background-size: cover; */
+  /* background-repeat: no-repeat; */
+  /* background-attachment: fixed; */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+a {
+  color: #bb86fc; /* A purple/blueish color for links */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #80cbc4; /* A teal color on hover */
 }
