@@ -1,0 +1,25 @@
+.services-section {
+    padding: 80px 20px;
+    background-color: #e8f5e9; /* Light green background */
+  }
+  
+  .services-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #388e3c; /* Green accent color */
+    text-align: center;
+  }
+  
+  .services-section ul {
+    list-style: disc;
+    padding-left: 40px;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .services-section li {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #333;
+  }

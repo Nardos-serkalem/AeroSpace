@@ -1,0 +1,35 @@
+.projects-section {
+    padding: 80px 20px;
+    background-color: #e3f2fd; /* Light blue background */
+  }
+  
+  .projects-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #1e88e5; /* Blue accent color */
+    text-align: center;
+  }
+  
+  .project-list {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .project-item {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project-item h3 {
+    margin-top: 0;
+    color: #333;
+  }
+  
+  .project-item p {
+    color: #555;
+    line-height: 1.6;
+  }

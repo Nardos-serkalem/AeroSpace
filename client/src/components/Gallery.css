@@ -1,0 +1,26 @@
+.gallery-section {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #f3e5f5; /* Light purple background */
+  }
+  
+  .gallery-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #9c27b0; /* Purple accent color */
+  }
+  
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .gallery-item {
+    background-color: #eee;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    /* Add styles for displaying images here */
+  }
