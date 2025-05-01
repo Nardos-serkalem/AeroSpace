@@ -1,14 +1,77 @@
-/* Basic global styles for the App */
-body {
-  font-family: sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.App {
+.app-container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
-  /* You might not need a background color here if it's set on the body */
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.video-background {
+  position: fixed; /* Fixed positioning for full-screen */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Place behind other content */
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
+  z-index: 0; /* Above video, below content */
+}
+
+.app-content {
+  position: relative; /* Position content above overlay */
+  z-index: 1;
+  width: 100%; /* Ensure app-content takes full width */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-navigation {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: transparent; /* Make navbar transparent */
+  color: white;
+}
+
+.logo .logo-image {
+  height: 40px;
+}
+
+.desktop-menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.desktop-menu a {
+  color: white;
+  text-decoration: none;
+}
+
+.desktop-menu a:hover {
+  text-decoration: underline;
+  color: #80cbc4;
+}
+
+.desktop-menu .auth-links {
+  display: flex;
+  gap: 10px;
+  margin-left: 20px;
 }

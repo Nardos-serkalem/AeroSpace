@@ -1,20 +1,27 @@
 .home-section {
-    padding: 100px 20px;
-    text-align: center;
-    background-color: #050000; /* Dark grey background */
-    color: #e0e0e0;
-  }
-  
-  .hero-content h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    color: #ffffff; /* Accent color */
-  }
-  
-  .hero-content p {
-    font-size: 1.2em;
-    color: #e0e0e0;
-    line-height: 1.6;
-    max-width: 800px;
-    margin: 0 auto;
-  }
+  padding: 100px 20px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.4); /* Transparent black */
+  color: #e0e0e0;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  justify-content: center; /* Center content vertically (if you want full height) */
+  min-height: auto; /* Adjust if you set full height earlier */
+}
+
+.hero-content h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #bb86fc;
+}
+
+.hero-content p {
+  font-size: 1.2em;
+  color: #e0e0e0;
+  line-height: 1.6;
+  max-width: 800px; /* Adjust max width as needed */
+  margin: 0 auto; /* Center the text block */
+}

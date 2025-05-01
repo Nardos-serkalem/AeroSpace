@@ -1,23 +1,18 @@
 body {
   margin: 0;
-  font-family: sans-serif; /* Using a more general sans-serif for better cross-browser compatibility */
+  font-family: sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #121212; /* Very dark grey background */
-  color: #e0e0e0; /* Light grey text for better contrast */
-  /* If you have a background image, you might need to adjust its styling for the dark theme */
-  /* background-image: url('./assets/images/your-dark-background-image.jpg'); */
-  /* background-size: cover; */
-  /* background-repeat: no-repeat; */
-  /* background-attachment: fixed; */
+  color: #e0e0e0; /* Light grey text */
 }
 
 a {
-  color: #bb86fc; /* A purple/blueish color for links */
+  color: #bb86fc; /* Link color */
   text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;
-  color: #80cbc4; /* A teal color on hover */
+  color: #80cbc4; /* Link hover color */
 }

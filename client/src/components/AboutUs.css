@@ -1,20 +1,27 @@
 .about-us-section {
-    padding: 80px 20px;
-    text-align: center;
-    background-color: #424242; /* Darker grey background */
-    color: #e0e0e0;
-  }
-  
-  .about-us-section h2 {
-    font-size: 2em;
-    margin-bottom: 15px;
-    color: #bb86fc; /* Accent color */
-  }
-  
-  .about-us-section p {
-    font-size: 1.1em;
-    line-height: 1.6;
-    color: #e0e0e0;
-    max-width: 800px;
-    margin: 0 auto;
-  }
+  padding: 80px 20px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.4); /* Transparent black */
+  color: #e0e0e0;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: auto;
+}
+
+.about-us-section h2 {
+  font-size: 2em;
+  margin-bottom: 15px;
+  color: #bb86fc;
+}
+
+.about-us-section p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #e0e0e0;
+  max-width: 800px; /* Adjust max width as needed */
+  margin: 0 auto;
+}
