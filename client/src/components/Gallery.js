@@ -11,15 +11,17 @@ function Gallery() {
       <div className="image-grid">
         <div className="gallery-item">
           <img src={image1} alt="Description 1" />
-          <p className="image-description">One-line description of image 1.</p>
+          <p className="image-description">A behind-the-scenes look at our team advancing research and real-time forecasting.
+
+</p>
         </div>
         <div className="gallery-item">
           <img src={image2} alt="Description 2" />
-          <p className="image-description">Brief detail about image 2.</p>
+          <p className="image-description">Showcasing our recent space innovation summit bringing together minds across Russia.</p>
         </div>
         <div className="gallery-item">
           <img src={image3} alt="Description 3" />
-          <p className="image-description">A single line explaining image 3.</p>
+          <p className="image-description">Empowering future scientists through hands-on aerospace training and workshops.</p>
         </div>
         {/* ... more images */}
       </div>
