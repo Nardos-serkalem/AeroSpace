@@ -1,6 +1,7 @@
 import React from 'react';
 import './Footer.css';
-import logo from '../assets/images/your-logo.png'; // Adjust path as needed
+import logo from '../assets/images/your-logo.png'; // Adjust the path to your actual logo
+import { FaFacebookF, FaTwitter, FaLinkedinIn, FaYoutube } from 'react-icons/fa';
 
 function Footer() {
   return (
@@ -34,12 +35,19 @@ function Footer() {
           </ul>
         </div>
 
-        {/* Column 4 */}
+        {/* Column 4: Contact Info + Social Media */}
         <div className="footer-column contact-info">
           <h3>Contact</h3>
           <p><a href="mailto:info@aaac.org">info@aaac.org</a></p>
           <p>Phone: +251 123 456 789</p>
           <p>Addis Ababa, Ethiopia</p>
+
+          <div className="social-media-icons">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><FaFacebookF /></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><FaLinkedinIn /></a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer"><FaYoutube /></a>
+          </div>
         </div>
       </div>
 
