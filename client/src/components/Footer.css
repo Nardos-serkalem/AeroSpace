@@ -85,3 +85,18 @@
   text-align: center;
   font-size: 0.8em;
 }
+.social-media-icons {
+  margin-top: 10px;
+  display: flex;
+  gap: 12px;
+}
+
+.social-media-icons a {
+  color: #e0e0e0;
+  font-size: 1.2em;
+  transition: color 0.3s ease;
+}
+
+.social-media-icons a:hover {
+  color: #6ba0fd;
+}
