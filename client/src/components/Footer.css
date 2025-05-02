@@ -1,16 +1,102 @@
+/* client/src/components/Footer.css */
 .main-footer {
-    background-color: #333; /* Dark background for the footer */
-    color: #eee;
-    padding: 20px;
-    text-align: center;
-    margin-top: 50px; /* Add some space above the footer */
-  }
-  
-  .footer-content {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  .main-footer p {
-    font-size: 0.9em;
-  }
+  background-color: #212121; /* Dark background */
+  color: #e0e0e0;
+  padding: 40px 20px;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex; /* Enable flexbox for the top section */
+  flex-direction: column; /* Stack top and content */
+  align-items: flex-start; /* Align top content to the left by default */
+}
+
+.footer-top {
+  display: flex;
+  width: 100%;
+  align-items: flex-start; /* Align logo and other top elements to the top */
+  margin-bottom: 20px; /* Add some space between logo area and content */
+}
+
+.footer-logo-area {
+  display: flex;
+  flex-direction: column; /* Stack logo and definition vertically */
+  align-items: flex-start; /* Align logo and definition to the left */
+  margin-right: 30px; /* Add some space to the right of the logo area */
+}
+
+.logo-image-footer {
+  height: 50px; /* Adjust the height of your footer logo */
+  margin-bottom: 5px; /* Add some space between logo and definition */
+}
+
+.footer-definition {
+  font-size: 0.8em;
+  color: #ccc; /* Adjust the color of the definition text */
+  line-height: 1.4;
+  margin-top: 0; /* Remove default top margin for the paragraph */
+}
+
+.footer-content {
+  max-width: 1200px; /* Adjust as needed */
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive columns */
+  gap: 20px;
+  width: 100%; /* Ensure content takes full width */
+}
+
+.footer-column {
+  text-align: left;
+}
+
+.footer-column h3 {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+  color: #779eff; /* Accent color for headings */
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column li {
+  margin-bottom: 8px;
+}
+
+.footer-column a {
+  color: #e0e0e0;
+  text-decoration: none;
+  font-size: 0.9em;
+}
+
+.footer-column a:hover {
+  text-decoration: underline;
+  color: #80cbc4;
+}
+
+.footer-bottom {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #424242;
+  text-align: center;
+  font-size: 0.8em;
+  width: 100%; /* Ensure bottom takes full width */
+  box-sizing: border-box; /* Include padding and border in width */
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+/* Styles for contact information */
+.contact-info p {
+  font-size: 0.9em;
+  line-height: 1.6;
+}
+
+.contact-info a {
+  display: block;
+  margin-bottom: 5px;
+}
