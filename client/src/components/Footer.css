@@ -1,58 +1,48 @@
-/* client/src/components/Footer.css */
 .main-footer {
-  background-color: #212121; /* Dark background */
+  background-color: #000000;
   color: #e0e0e0;
   padding: 40px 20px;
   width: 100%;
   box-sizing: border-box;
-  display: flex; /* Enable flexbox for the top section */
-  flex-direction: column; /* Stack top and content */
-  align-items: flex-start; /* Align top content to the left by default */
 }
 
 .footer-top {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
   width: 100%;
-  align-items: flex-start; /* Align logo and other top elements to the top */
-  margin-bottom: 20px; /* Add some space between logo area and content */
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
+/* Logo + definition block as first column */
 .footer-logo-area {
   display: flex;
-  flex-direction: column; /* Stack logo and definition vertically */
-  align-items: flex-start; /* Align logo and definition to the left */
-  margin-right: 30px; /* Add some space to the right of the logo area */
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .logo-image-footer {
-  height: 50px; /* Adjust the height of your footer logo */
-  margin-bottom: 5px; /* Add some space between logo and definition */
+  height: 100px;
+  margin-bottom: 50px;
 }
 
 .footer-definition {
-  font-size: 0.8em;
-  color: #ccc; /* Adjust the color of the definition text */
-  line-height: 1.4;
-  margin-top: 0; /* Remove default top margin for the paragraph */
+  font-size: 0.9em;
+  color: #ccc;
+  line-height: 1.6;
+  margin-top: 0;
 }
 
-.footer-content {
-  max-width: 1200px; /* Adjust as needed */
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive columns */
-  gap: 20px;
-  width: 100%; /* Ensure content takes full width */
-}
-
+/* All footer content columns */
 .footer-column {
   text-align: left;
 }
 
 .footer-column h3 {
-  font-size: 1.2em;
-  margin-bottom: 15px;
-  color: #779eff; /* Accent color for headings */
+  font-size: 1.1em;
+  margin-bottom: 12px;
+  color: #779eff;
 }
 
 .footer-column ul {
@@ -73,24 +63,10 @@
 
 .footer-column a:hover {
   text-decoration: underline;
-  color: #80cbc4;
+  color: #6ba0fd;
 }
 
-.footer-bottom {
-  margin-top: 30px;
-  padding-top: 20px;
-  border-top: 1px solid #424242;
-  text-align: center;
-  font-size: 0.8em;
-  width: 100%; /* Ensure bottom takes full width */
-  box-sizing: border-box; /* Include padding and border in width */
-}
-
-.footer-bottom p {
-  margin: 0;
-}
-
-/* Styles for contact information */
+/* Contact info block */
 .contact-info p {
   font-size: 0.9em;
   line-height: 1.6;
@@ -99,4 +75,13 @@
 .contact-info a {
   display: block;
   margin-bottom: 5px;
+}
+
+/* Footer bottom */
+.footer-bottom {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #222;
+  text-align: center;
+  font-size: 0.8em;
 }
