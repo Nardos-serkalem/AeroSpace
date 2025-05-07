@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import videoBg from './assets/videos/background.mp4'; // Adjust path if needed
-import logo from './assets/images/your-logo.png';   // Adjust path if needed
+import videoBg from './assets/videos/backgroundd.mp4';
+import logo from './assets/images/your-logo.png';   
 import Home from './components/Home';
 import AboutUs from './components/AboutUs';
 import Services from './components/Services';

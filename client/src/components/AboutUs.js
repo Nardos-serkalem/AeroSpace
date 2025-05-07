@@ -1,6 +1,6 @@
 import React from 'react';
 import './AboutUs.css';
-import motionVideo from '../assets/videos/backgroundd.mp4'; // Update filename
+import motionVideo from '../assets/videos/background.mp4'; // Update filename
 
 function AboutUs() {
   return (
