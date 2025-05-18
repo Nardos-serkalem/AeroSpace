@@ -22,6 +22,7 @@ function Footer() {
             <li><a href="/about">About Us</a></li>
             <li><a href="/projects">Projects</a></li>
             <li><a href="/news">News</a></li>
+            <li><a href='/discover-us'>DiscoverUs</a></li>
           </ul>
         </div>
 
@@ -32,6 +33,8 @@ function Footer() {
             <li><a href="/publications">Publications</a></li>
             <li><a href="/events">Events</a></li>
             <li><a href="/gallery">Gallery</a></li>
+            <li><a href="/courses">Courses</a></li>
+            <li><a href="/partners">Partners</a></li>
           </ul>
         </div>
 
