@@ -28,27 +28,39 @@ function Team() {
   const teamMembers = [
     {
       id: 1,
-      name: "Dr. Sarah Johnson",
+      name: "Dr.Yeshurun Alemayehu ADDE",
       role: "President",
       image: "/images/team/president.jpg",
       description: "Leading AAAC's vision for aerospace innovation in Africa",
-      expertise: ["Aerospace Engineering", "Strategic Leadership", "International Relations"]
+      expertise: ["Aerospace Engineering", "Strategic Leadership", "International Relations"],
+      social: {
+        linkedin: "https://www.linkedin.com/in/Yeshurun Alemayehu ADDE",
+        twitter: "https://twitter.com/Yeshurun Alemayehu ADDE"
+      }
     },
     {
       id: 2,
-      name: "Prof. David Mensah",
+      name: "Eng. Eshet Tesfaye Tafes",
       role: "Vice President",
       image: "/images/team/vice-president.jpg",
       description: "Overseeing research and development initiatives",
-      expertise: ["Space Technology", "Research Management", "Academic Leadership"]
+      expertise: ["Aerospace Research", "Space Technology", "Research Management"],
+      social: {
+        linkedin: "https://www.linkedin.com/in/Eshet Tesfaye Tafes",
+        twitter: "https://twitter.com/Eshet Tesfaye Tafse"
+      }
     },
     {
       id: 3,
-      name: "Dr. Maya Patel",
-      role: "Research Director",
+      name: "Eng. Mikyas",
+      role: "Developer",
       image: "/images/team/member1.jpg",
-      description: "Coordinating research projects and international collaborations",
-      expertise: ["Astrophysics", "Project Management", "International Collaboration"]
+      description: "Coordinating research projects",
+      expertise: ["Web Development"],
+      social: {
+        linkedin: "https://www.linkedin.com/in/maya-patel",
+        twitter: "https://twitter.com/mayapatel"
+      }
     },
     {
       id: 4,
@@ -56,7 +68,11 @@ function Team() {
       role: "Education Director",
       image: "/images/team/member2.jpg",
       description: "Leading educational programs and student engagement",
-      expertise: ["Space Education", "Curriculum Development", "Student Mentorship"]
+      expertise: ["Space Education", "Curriculum Development", "Student Mentorship"],
+      social: {
+        linkedin: "https://www.linkedin.com/in/john-okafor",
+        twitter: "https://twitter.com/johnokafor"
+      }
     }
   ];
 
@@ -86,27 +102,19 @@ function Team() {
                         e.target.onerror = null;
                         e.target.src = "/images/team/placeholder.jpg";
                       }}
-                      className="image-placeholder"
                     />
                   ) : (
                     <div className="image-placeholder" />
                   )}
-                  <div className="member-overlay">
-                    <div className="member-expertise">
-                      {member.expertise.map((skill, index) => (
-                        <span key={index} className="expertise-tag">{skill}</span>
-                      ))}
-                    </div>
-                  </div>
                 </div>
                 <h3>{member.name}</h3>
                 <h4>{member.role}</h4>
                 <p>{member.description}</p>
                 <div className="social-links">
-                  <a href="#" className="social-icon linkedin">
+                  <a href={member.social.linkedin} target="_blank" rel="noopener noreferrer" className="social-icon linkedin">
                     <i className="fab fa-linkedin"></i>
                   </a>
-                  <a href="#" className="social-icon twitter">
+                  <a href={member.social.twitter} target="_blank" rel="noopener noreferrer" className="social-icon twitter">
                     <i className="fab fa-twitter"></i>
                   </a>
                 </div>
@@ -136,27 +144,19 @@ function Team() {
                         e.target.onerror = null;
                         e.target.src = "/images/team/placeholder.jpg";
                       }}
-                      className="image-placeholder"
                     />
                   ) : (
                     <div className="image-placeholder" />
                   )}
-                  <div className="member-overlay">
-                    <div className="member-expertise">
-                      {member.expertise.map((skill, index) => (
-                        <span key={index} className="expertise-tag">{skill}</span>
-                      ))}
-                    </div>
-                  </div>
                 </div>
                 <h3>{member.name}</h3>
                 <h4>{member.role}</h4>
                 <p>{member.description}</p>
                 <div className="social-links">
-                  <a href="#" className="social-icon linkedin">
+                  <a href={member.social.linkedin} target="_blank" rel="noopener noreferrer" className="social-icon linkedin">
                     <i className="fab fa-linkedin"></i>
                   </a>
-                  <a href="#" className="social-icon twitter">
+                  <a href={member.social.twitter} target="_blank" rel="noopener noreferrer" className="social-icon twitter">
                     <i className="fab fa-twitter"></i>
                   </a>
                 </div>
